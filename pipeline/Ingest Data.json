@@ -17,13 +17,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
+						"type": "ExcelSource",
 						"storeSettings": {
 							"type": "HttpReadSettings",
 							"requestMethod": "GET"
-						},
-						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
 						}
 					},
 					"sink": {
@@ -49,7 +46,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "GR04_DS_Operational_Git",
+						"referenceName": "GR04_DS_Teste",
 						"type": "DatasetReference"
 					}
 				],
