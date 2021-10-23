@@ -2,14 +2,15 @@
 	"name": "GR04_DS_Operational_Git",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "GR04_LS_GIT",
+			"referenceName": "GR04_LS_GIT2",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "HttpServerLocation",
+				"relativeUrl": "/2017.xlsx"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
