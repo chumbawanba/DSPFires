@@ -1,0 +1,15 @@
+{
+	"name": "HttpServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://storage.googleapis.com/kagglesdsdata/datasets/1532735/2529719/spotify_dataset.csv?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20211018%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20211018T175803Z&X-Goog-Expires=259199&X-Goog-SignedHeaders=host&X-Goog-Signature=405d71d72a314b8c78e5df61170586df070f7f735a544597af7c601da0511c4bd4a7c2f1896701661e932c500cca0e81c27666cc05fbebd0dc4c73b5322387b9d53170beb40393a3d546e05cae6e1105c3e64d56b4f4014656cf3c6b6d81ba9e3a18e7dea34b16d5f7d4c93c5cce931d3e0607eb6fa7bc8c9bf039c9b91191d7d66f3cac53c479b95d3227b25a9e3f3971f76621f5d9ccd93e39ef06bf7df3f5bb910b46cc7be7c3fe242a8fcf1be3ccadd94378263029c70dd8ce2f602c47e72d97deb091c5523c0cc5859f3aa4e2be1bfa429e576add0c93c07244d547ef068893c68e638234a8d154042c32e381f67d7226ae1bdbd6c9c02a13cf3068cb69",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Basic",
+			"userName": "joao.savier@gmail.com",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRTQkFEU1AwNkFERl80YjhjOGQ1ZS1hYjIzLTQzM2UtYTAxNC1kNjQxOGQzZDJlZTkiDQp9"
+		}
+	}
+}

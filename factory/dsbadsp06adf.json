@@ -1,0 +1,9 @@
+{
+	"name": "dsbadsp06adf",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "838fc56b-bbac-43f8-9c71-1d2221502d4c",
+		"tenantId": "bd913315-e9b7-4c21-bbf2-c927f71d5d22"
+	}
+}
