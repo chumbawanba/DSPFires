@@ -1,0 +1,210 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "dsbadsp06adf"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage2'"
+		},
+		"AzureDataLakeStorageGR04_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorageGR04'"
+		},
+		"G01_LS_RAW_ADLS_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'G01_LS_RAW_ADLS'"
+		},
+		"GR04_LS_GIT_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'GR04_LS_GIT'"
+		},
+		"GR04_LS_GIT2_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'GR04_LS_GIT2'"
+		},
+		"HttpServer1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'HttpServer1'"
+		},
+		"HttpServer2_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'HttpServer2'"
+		},
+		"LS_Kaggle_Spotify_Raw_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_Kaggle_Spotify_Raw'"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dsbadw06.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dsbadw06.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorageGR04_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dsbadw06.dfs.core.windows.net"
+		},
+		"G01_LS_RAW_ADLS_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dsbadw06.dfs.core.windows.net"
+		},
+		"GR01_LS_github_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://github.com/joaopedrotg/DSP_F1_DB/raw/main/"
+		},
+		"GR04_LS_GIT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://github.com/chumbawanba/DSPFires/blob/main/2017.xlsx"
+		},
+		"GR04_LS_GIT_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "edgarricardo7@gmail.com"
+		},
+		"GR04_LS_GIT2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://github.com/chumbawanba/DSPFires"
+		},
+		"GR04_LS_GIT2_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "chumbawanba"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://storage.googleapis.com/kagglesdsdata/datasets/1532735/2529719/spotify_dataset.csv?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20211018%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20211018T175803Z&X-Goog-Expires=259199&X-Goog-SignedHeaders=host&X-Goog-Signature=405d71d72a314b8c78e5df61170586df070f7f735a544597af7c601da0511c4bd4a7c2f1896701661e932c500cca0e81c27666cc05fbebd0dc4c73b5322387b9d53170beb40393a3d546e05cae6e1105c3e64d56b4f4014656cf3c6b6d81ba9e3a18e7dea34b16d5f7d4c93c5cce931d3e0607eb6fa7bc8c9bf039c9b91191d7d66f3cac53c479b95d3227b25a9e3f3971f76621f5d9ccd93e39ef06bf7df3f5bb910b46cc7be7c3fe242a8fcf1be3ccadd94378263029c70dd8ce2f602c47e72d97deb091c5523c0cc5859f3aa4e2be1bfa429e576add0c93c07244d547ef068893c68e638234a8d154042c32e381f67d7226ae1bdbd6c9c02a13cf3068cb69"
+		},
+		"HttpServer1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "joao.savier@gmail.com"
+		},
+		"HttpServer2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": " Grupo-4---p-s-gradua-o/2011_2017.csv"
+		},
+		"HttpServer2_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "portomasa1986@gmail.com"
+		},
+		"LS_Kaggle_Spotify_Raw_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021/download"
+		},
+		"LS_Kaggle_Spotify_Raw_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "joaosavier@gmail.com"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "dsbadsp06adf_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
+					"AzureDataLakeStorage2_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage2_accountKey')]"
+					},
+					"AzureDataLakeStorageGR04_accountKey": {
+						"value": "[parameters('AzureDataLakeStorageGR04_accountKey')]"
+					},
+					"G01_LS_RAW_ADLS_accountKey": {
+						"value": "[parameters('G01_LS_RAW_ADLS_accountKey')]"
+					},
+					"GR04_LS_GIT_password": {
+						"value": "[parameters('GR04_LS_GIT_password')]"
+					},
+					"GR04_LS_GIT2_password": {
+						"value": "[parameters('GR04_LS_GIT2_password')]"
+					},
+					"HttpServer1_password": {
+						"value": "[parameters('HttpServer1_password')]"
+					},
+					"HttpServer2_password": {
+						"value": "[parameters('HttpServer2_password')]"
+					},
+					"LS_Kaggle_Spotify_Raw_password": {
+						"value": "[parameters('LS_Kaggle_Spotify_Raw_password')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage2_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage2_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorageGR04_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorageGR04_properties_typeProperties_url')]"
+					},
+					"G01_LS_RAW_ADLS_properties_typeProperties_url": {
+						"value": "[parameters('G01_LS_RAW_ADLS_properties_typeProperties_url')]"
+					},
+					"GR01_LS_github_properties_typeProperties_url": {
+						"value": "[parameters('GR01_LS_github_properties_typeProperties_url')]"
+					},
+					"GR04_LS_GIT_properties_typeProperties_url": {
+						"value": "[parameters('GR04_LS_GIT_properties_typeProperties_url')]"
+					},
+					"GR04_LS_GIT_properties_typeProperties_userName": {
+						"value": "[parameters('GR04_LS_GIT_properties_typeProperties_userName')]"
+					},
+					"GR04_LS_GIT2_properties_typeProperties_url": {
+						"value": "[parameters('GR04_LS_GIT2_properties_typeProperties_url')]"
+					},
+					"GR04_LS_GIT2_properties_typeProperties_userName": {
+						"value": "[parameters('GR04_LS_GIT2_properties_typeProperties_userName')]"
+					},
+					"HttpServer1_properties_typeProperties_url": {
+						"value": "[parameters('HttpServer1_properties_typeProperties_url')]"
+					},
+					"HttpServer1_properties_typeProperties_userName": {
+						"value": "[parameters('HttpServer1_properties_typeProperties_userName')]"
+					},
+					"HttpServer2_properties_typeProperties_url": {
+						"value": "[parameters('HttpServer2_properties_typeProperties_url')]"
+					},
+					"HttpServer2_properties_typeProperties_userName": {
+						"value": "[parameters('HttpServer2_properties_typeProperties_userName')]"
+					},
+					"LS_Kaggle_Spotify_Raw_properties_typeProperties_url": {
+						"value": "[parameters('LS_Kaggle_Spotify_Raw_properties_typeProperties_url')]"
+					},
+					"LS_Kaggle_Spotify_Raw_properties_typeProperties_userName": {
+						"value": "[parameters('LS_Kaggle_Spotify_Raw_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}

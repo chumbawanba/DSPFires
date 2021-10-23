@@ -1,0 +1,87 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "dsbadsp06adf"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorageGR04_accountKey": {
+			"value": ""
+		},
+		"G01_LS_RAW_ADLS_accountKey": {
+			"value": ""
+		},
+		"GR04_LS_GIT_password": {
+			"value": ""
+		},
+		"GR04_LS_GIT2_password": {
+			"value": ""
+		},
+		"HttpServer1_password": {
+			"value": ""
+		},
+		"HttpServer2_password": {
+			"value": ""
+		},
+		"LS_Kaggle_Spotify_Raw_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://dsbadw06.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://dsbadw06.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorageGR04_properties_typeProperties_url": {
+			"value": "https://dsbadw06.dfs.core.windows.net"
+		},
+		"G01_LS_RAW_ADLS_properties_typeProperties_url": {
+			"value": "https://dsbadw06.dfs.core.windows.net"
+		},
+		"GR01_LS_github_properties_typeProperties_url": {
+			"value": "https://github.com/joaopedrotg/DSP_F1_DB/raw/main/"
+		},
+		"GR04_LS_GIT_properties_typeProperties_url": {
+			"value": "https://github.com/chumbawanba/DSPFires/blob/main/2017.xlsx"
+		},
+		"GR04_LS_GIT_properties_typeProperties_userName": {
+			"value": "edgarricardo7@gmail.com"
+		},
+		"GR04_LS_GIT2_properties_typeProperties_url": {
+			"value": "https://github.com/chumbawanba/DSPFires"
+		},
+		"GR04_LS_GIT2_properties_typeProperties_userName": {
+			"value": "chumbawanba"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://storage.googleapis.com/kagglesdsdata/datasets/1532735/2529719/spotify_dataset.csv?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20211018%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20211018T175803Z&X-Goog-Expires=259199&X-Goog-SignedHeaders=host&X-Goog-Signature=405d71d72a314b8c78e5df61170586df070f7f735a544597af7c601da0511c4bd4a7c2f1896701661e932c500cca0e81c27666cc05fbebd0dc4c73b5322387b9d53170beb40393a3d546e05cae6e1105c3e64d56b4f4014656cf3c6b6d81ba9e3a18e7dea34b16d5f7d4c93c5cce931d3e0607eb6fa7bc8c9bf039c9b91191d7d66f3cac53c479b95d3227b25a9e3f3971f76621f5d9ccd93e39ef06bf7df3f5bb910b46cc7be7c3fe242a8fcf1be3ccadd94378263029c70dd8ce2f602c47e72d97deb091c5523c0cc5859f3aa4e2be1bfa429e576add0c93c07244d547ef068893c68e638234a8d154042c32e381f67d7226ae1bdbd6c9c02a13cf3068cb69"
+		},
+		"HttpServer1_properties_typeProperties_userName": {
+			"value": "joao.savier@gmail.com"
+		},
+		"HttpServer2_properties_typeProperties_url": {
+			"value": " Grupo-4---p-s-gradua-o/2011_2017.csv"
+		},
+		"HttpServer2_properties_typeProperties_userName": {
+			"value": "portomasa1986@gmail.com"
+		},
+		"LS_Kaggle_Spotify_Raw_properties_typeProperties_url": {
+			"value": "https://www.kaggle.com/sashankpillai/spotify-top-200-charts-20202021/download"
+		},
+		"LS_Kaggle_Spotify_Raw_properties_typeProperties_userName": {
+			"value": "joaosavier@gmail.com"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
