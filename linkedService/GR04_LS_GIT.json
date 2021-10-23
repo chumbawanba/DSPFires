@@ -6,11 +6,11 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://github.com/MarcoAguiarGH/Grupo-4---p-s-gradua-o/blob/main/2011_2017.csv",
+			"url": "https://github.com/chumbawanba/DSPFires/blob/main/2017.xlsx",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Basic",
 			"userName": "edgarricardo7@gmail.com",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRTQkFEU1AwNkFERl81Zjg4YjE0OC0xYmMwLTRkNDEtOTA1My1lMjk5OGE5YmQyYTciDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRTQkFEU1AwNkFERl8wMjEyY2EwYy1hYjAzLTQ4OWQtYjViYy1kZTljMjNlYjEzNjAiDQp9"
 		}
 	}
 }
